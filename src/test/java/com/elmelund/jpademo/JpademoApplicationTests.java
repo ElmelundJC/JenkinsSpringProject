@@ -8,6 +8,7 @@ class JpademoApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }
