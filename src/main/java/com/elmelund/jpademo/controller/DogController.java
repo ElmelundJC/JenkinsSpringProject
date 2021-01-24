@@ -4,6 +4,8 @@ import com.elmelund.jpademo.model.Dog;
 import com.elmelund.jpademo.model.Owner;
 import com.elmelund.jpademo.service.DogService;
 import com.elmelund.jpademo.service.OwnerService;
+import com.elmelund.jpademo.service.springdatajpa.DogJPA;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +16,9 @@ import java.util.Optional;
 
 @Controller
 public class DogController {
+
+    @Autowired
+    private DogJPA dogJPA;
 
     private DogService dogService;
     private OwnerService ownerService;
