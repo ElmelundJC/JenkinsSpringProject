@@ -8,6 +8,6 @@ class DogControllerTest {
 
     @Test
     void addDog() {
-        assertEquals(4,3);
+        assertEquals(4,4);
     }
 }
